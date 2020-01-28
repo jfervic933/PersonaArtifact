@@ -12,7 +12,7 @@ import java.time.LocalDate;
  * @author profesor
  */
 public class Persona {
-    
+
     private LocalDate fechaNac;
     private String nombre;
     private String apellido1;
@@ -61,9 +61,14 @@ public class Persona {
     public String toString() {
         return "Persona{" + "fechaNac=" + fechaNac + ", nombre=" + nombre + ", apellido1=" + apellido1 + ", nif=" + nif + '}';
     }
-    
-    public void saludar (Persona aux){
+
+    public void saludar(Persona aux) {
         System.out.println("Hola " + aux.getNombre());
     }
-    
+
+    public void despedir(Persona aux) {
+        System.out.println("Adios " + aux.getNombre());
+
+    }
+
 }
